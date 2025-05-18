@@ -9,10 +9,10 @@ jobs:
     timeout-minutes: 60
     runs-on: ubuntu-latest
     steps:
-      name: Get code
+    - name: Get code
       uses: actions/checkout@v4
       
-      name: Install node
+    - name: Install node
       uses: actions/setup-node@v4
       with:
         node-version: lts/*
